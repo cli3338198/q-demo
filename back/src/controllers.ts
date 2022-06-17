@@ -21,8 +21,6 @@ export function postJobHandler(
   >,
   res: Response
 ) {
-  console.log({});
-
   const { id } = req.params;
   const { url } = req.body;
   // check if valid linkedin url
