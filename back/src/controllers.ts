@@ -21,12 +21,9 @@ export function postJobHandler(
   >,
   res: Response
 ) {
-  /* 
-        name and email validated on the front
-        validate the url here
-    */
   const { id } = req.params;
   const { url } = req.body;
+  // check if valid linkedin url
   const regex = new RegExp(
     /^(http(s)?:\/\/)?([\w]+\.)?linkedin\.com\/(pub|in|profile).+/
   );
