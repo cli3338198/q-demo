@@ -1,7 +1,7 @@
 import { Job, TeamMember } from "./types";
 
 /* 
-    names and titles pulled from these sources
+    people and titles pulled from these sources
     https://randomuser.me/
     https://www.indeed.com/career-advice/career-development/creative-job-titles
 */
