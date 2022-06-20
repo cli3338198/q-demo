@@ -15,6 +15,7 @@ export const MissionContainer = styled(Box)(({ theme }) => ({
     alignItems: "center",
     paddingBottom: "20px",
     marginTop: "100px",
+    height: "100vh",
   },
 }));
 

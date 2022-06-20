@@ -1,4 +1,4 @@
-import { List, Typography, ListItemText } from "@mui/material";
+import { List, Typography, ListItem } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import { Box } from "@mui/system";
 
@@ -23,9 +23,9 @@ export const MyList = styled(List)(({ type }: { type?: "row" }) => ({
   alignItems: "center",
 }));
 
-export const MyListItemText = styled(ListItemText)(() => ({
+export const MyListItem = styled(ListItem)(() => ({
   width: "auto",
-  marginRight: "4em",
+  marginRight: "2em",
   ":hover": {
     borderBottom: "1px solid black",
     cursor: "pointer",

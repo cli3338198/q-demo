@@ -4,12 +4,7 @@ import axios from "axios";
 import { TeamMemberType } from "../../types/types";
 import { useTheme } from "@mui/material/styles";
 import TeamMember from "./TeamMember";
-import {
-  TeammemberContainer,
-  TeammemberHeader,
-  TeamContent,
-  TeamContainer,
-} from "../../styles/teamMember";
+import { TeammemberHeader } from "../../styles/teamMember";
 
 export default function TeamMembers() {
   const [team, setTeam] = useState<
@@ -57,14 +52,15 @@ export default function TeamMembers() {
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
+        paddingTop: "10%",
       }}
     >
-      <TeammemberHeader>The Team</TeammemberHeader>
+      <TeammemberHeader id="team">The Team</TeammemberHeader>
       <Grid
         container
-        spacing={3}
+        spacing={2}
         justifyContent={"center"}
-        sx={{ margin: "20px 4px 10px 4px" }}
+        sx={{ margin: "10px 4px 10px 4px" }}
       >
         {renderTeam}
       </Grid>

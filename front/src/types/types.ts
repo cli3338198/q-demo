@@ -4,3 +4,8 @@ export type TeamMemberType = {
   title: string;
   picture: string;
 };
+
+export type MyContextType = {
+  navToggled: boolean;
+  setNavToggled: React.Dispatch<React.SetStateAction<boolean>>;
+};

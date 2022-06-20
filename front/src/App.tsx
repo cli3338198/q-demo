@@ -1,29 +1,36 @@
 import React from "react";
+import "./App.css";
 import { ThemeProvider } from "@emotion/react";
 import { theme } from "./styles/theme";
-import { Button, Container } from "@mui/material";
+import { Container } from "@mui/material";
 import NavBar from "./components/NavBar/NavBar";
 import About from "./components/About/About";
-import Jobs from "./components/Jobs/Jobs";
 import Mission from "./components/Mission/Mission";
 import Team from "./components/Team/Team";
 import Values from "./components/Values/Values";
+import NavDrawer from "./components/NavDrawer/NavDrawer";
+import Jobs from "./components/Jobs/Jobs";
+import MyProvider from "./context/MyProvider";
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
       <Container maxWidth="xl">
-        {/* Navbar */}
-        <NavBar />
-        {/* About */}
-        <About />
-        {/* Mission */}
-        <Mission />
-        {/* Values */}
-        <Values />
-        {/* Team Members */}
-        <Team />
-        {/* Jobs */}
+        <MyProvider>
+          {/* Navbar */}
+          <NavBar />
+          {/* About */}
+          <About />
+          {/* Mission */}
+          <Mission />
+          {/* Values */}
+          <Values />
+          {/* Team Members */}
+          <Team />
+          {/* Jobs */}
+          {/* Drawer */}
+          <NavDrawer />
+        </MyProvider>
       </Container>
     </ThemeProvider>
   );

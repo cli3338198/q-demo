@@ -5,9 +5,11 @@
   /* box-sizing: border-box; */
 }
 
-/* html {
+html {
   scroll-behavior: smooth;
 }
+
+/* 
 
 li {
   list-style: none;
@@ -28,3 +30,14 @@ li {
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 } */
+
+a {
+  text-decoration: none;
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
+}

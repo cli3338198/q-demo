@@ -5,6 +5,9 @@ export const AboutContainer = styled(Box)(({ theme }) => ({
   display: "flex",
   width: "100%",
   height: "100%",
+  [theme.breakpoints.up("lg")]: {
+    paddingTop: "5%",
+  },
   [theme.breakpoints.down("md")]: {
     flexDirection: "column",
     alignItems: "center",

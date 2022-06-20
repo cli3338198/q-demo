@@ -8,5 +8,12 @@ export const theme = createTheme({
         disableElevation: true,
       },
     },
+    MuiDrawer: {
+      styleOverrides: {
+        paper: {
+          width: 150,
+        },
+      },
+    },
   },
 });
