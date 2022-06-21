@@ -12,14 +12,6 @@ export const AboutContainer = styled(Box)(({ theme }) => ({
     flexDirection: "column",
     alignItems: "center",
   },
-  [theme.breakpoints.down("sm")]: {
-    flexDirection: "column",
-    alignItems: "center",
-  },
-  [theme.breakpoints.down("xs")]: {
-    flexDirection: "column",
-    alignItems: "center",
-  },
 }));
 
 export const AboutContent = styled(Box)(({ theme }) => ({

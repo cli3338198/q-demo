@@ -1,12 +1,9 @@
 import { useContext, useEffect, useRef } from "react";
-import { Drawer, Divider, ListItemButton, useMediaQuery } from "@mui/material";
-import { useTheme } from "@mui/material/styles";
+import { Drawer, Divider, ListItemButton } from "@mui/material";
 import { myContext } from "../../context/MyProvider";
 import NavDrawerItem from "./NavDrawerItem";
 
 export default function NavDrawer() {
-  const theme = useTheme();
-  const matches = useMediaQuery(theme.breakpoints.down("md"));
   const { navToggled, setNavToggled } = useContext(myContext);
   const drawerRef = useRef<any>();
 
@@ -20,10 +17,17 @@ export default function NavDrawer() {
     return () => {
       document.removeEventListener("click", handleOutsideClick);
     };
-  }, [matches, navToggled, setNavToggled, drawerRef]);
+  }, [navToggled, setNavToggled, drawerRef]);
 
   return (
-    <Drawer open={navToggled} ref={drawerRef}>
+    <Drawer
+      open={navToggled}
+      ref={drawerRef}
+      disableScrollLock={true}
+      sx={{
+        zIndex: 1000,
+      }}
+    >
       <ListItemButton>
         <NavDrawerItem>
           <a href="#about">About</a>

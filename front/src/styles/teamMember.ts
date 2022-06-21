@@ -15,9 +15,10 @@ export const Teammember = styled(Box)(({ theme }) => ({
   justifyContent: "center",
   alignItems: "center",
   flexDirection: "column",
-  width: "60%",
-  [theme.breakpoints.up("md")]: {
+  width: "80%",
+  [theme.breakpoints.down("md")]: {
     position: "relative",
+    width: "100%",
   },
 }));
 
@@ -37,10 +38,6 @@ export const TeammemberDescription = styled(Typography)(({ theme }) => ({
   lineHeight: 1.3,
   fontSize: "0.7rem",
   marginbottom: "20px",
-  //   [theme.breakpoints.down("sm")]: {
-  //     padding: 0,
-  //     fontSize: "28px",
-  //   },
 }));
 
 //
@@ -54,6 +51,7 @@ export const TeamContainer = styled(Box)(({ theme }) => ({
   width: "100%",
   height: "100%",
   marginTop: "60px",
+  marginBottom: "60px",
   [theme.breakpoints.down("md")]: {
     display: "grid",
     marginTop: "30px",

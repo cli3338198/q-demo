@@ -13,7 +13,7 @@ export const ValueContainer = styled(Box)(({ theme }) => ({
   height: "100%",
   padding: "0px 0px",
   [theme.breakpoints.down("md")]: {
-    marginTop: "30px",
+    marginTop: "40px",
     flexDirection: "column",
     alignItems: "center",
   },
@@ -56,11 +56,11 @@ export const Value = styled(Box)(({ theme }) => ({
   flexDirection: "column",
   margin: "1em",
   [theme.breakpoints.down("md")]: {
-    width: "40%",
+    width: "60%",
     position: "relative",
   },
   [theme.breakpoints.down("sm")]: {
-    width: "40%",
+    width: "60%",
     position: "relative",
   },
 }));
@@ -79,7 +79,7 @@ export const ValueTitle = styled(Typography)(({ theme }) => ({
 
 export const ValueImage = styled("img")(({ src, theme }) => ({
   src: `url(${src})`,
-  width: "100%",
+  width: "80%",
   padding: "10px",
   borderRadius: "50%",
   [theme.breakpoints.down("md")]: {
@@ -93,11 +93,25 @@ export const ValueImage = styled("img")(({ src, theme }) => ({
 }));
 
 export const ValueDescription = styled(Typography)(({ theme }) => ({
-  lineHeight: 1.25,
-  letterSpacing: 1.25,
-  marginBottom: "3em",
+  display: "flex",
+  textAlign: "center",
+  lineHeight: 1.15,
+  letterSpacing: 0.3,
+  marginBottom: "1em",
   [theme.breakpoints.down("sm")]: {
     fontSize: "15px",
+    letterSpacing: 1.15,
+    marginBottom: "1.5em",
+  },
+}));
+
+export const ValueParagraph = styled(Typography)(({ theme }) => ({
+  lineHeight: 1.15,
+  letterSpacing: 0.8,
+  marginBottom: "2em",
+  fontSize: "14px",
+  [theme.breakpoints.down("sm")]: {
+    fontSize: "13px",
     letterSpacing: 1.15,
     marginBottom: "1.5em",
   },

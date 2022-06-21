@@ -3,11 +3,15 @@ import { styled } from "@mui/material/styles";
 import { Box } from "@mui/system";
 
 export const NavBarContainer = styled(Box)(() => ({
+  position: "sticky",
+  background: "white",
+  top: "0",
+  left: "0",
   display: "flex",
-  marginTop: 4,
   justifyContent: "center",
   alignItem: "center",
   padding: "2px 8px",
+  zIndex: 1000,
 }));
 
 export const NavBarHeader = styled(Typography)(() => ({

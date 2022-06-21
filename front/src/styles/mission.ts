@@ -27,6 +27,9 @@ export const MissionTitle = styled(Typography)(({ theme }) => ({
   fontSize: "72px",
   marginbottom: "20px",
   padding: "20px",
+  [theme.breakpoints.down("md")]: {
+    textAlign: "center",
+  },
   [theme.breakpoints.down("sm")]: {
     marginBottom: 0,
     fontSize: "42px",
@@ -53,6 +56,7 @@ export const MissionDescription = styled(Typography)(({ theme }) => ({
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
+  textAlign: "center",
   lineHeight: 1.25,
   letterSpacing: 1.25,
   marginBottom: "2em",

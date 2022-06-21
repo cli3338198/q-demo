@@ -1,5 +1,3 @@
-import { ListItemText, ListItemButton } from "@mui/material";
-
 import LanguageIcon from "@mui/icons-material/Language";
 import {
   MyList,
@@ -9,9 +7,9 @@ import {
 } from "../../styles/navbar";
 import NavBarDesktopItem from "./NavBarDesktopItem";
 
-export default function NavBarDesktop({ matches }: { matches: boolean }) {
+export default function NavBarDesktop() {
   return (
-    <NavBarContainer>
+    <NavBarContainer id="navbar">
       <NavBarHeader>Werk</NavBarHeader>
       <MyList type="row">
         <MyListItem>

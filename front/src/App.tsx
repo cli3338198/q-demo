@@ -11,6 +11,8 @@ import Values from "./components/Values/Values";
 import NavDrawer from "./components/NavDrawer/NavDrawer";
 import Jobs from "./components/Jobs/Jobs";
 import MyProvider from "./context/MyProvider";
+import JobDrawer from "./components/JobDrawer/JobDrawer";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -28,8 +30,11 @@ function App() {
           {/* Team Members */}
           <Team />
           {/* Jobs */}
+          <Jobs />
           {/* Drawer */}
           <NavDrawer />
+          <JobDrawer />
+          <Footer />
         </MyProvider>
       </Container>
     </ThemeProvider>

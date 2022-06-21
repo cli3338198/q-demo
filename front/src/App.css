@@ -1,26 +1,17 @@
-* {
-  /* margin: 0;
-  padding: 0; */
-  /* border: 1px dotted red; */
-  /* box-sizing: border-box; */
-}
-
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 8rem;
+  overflow-x: hidden;
 }
 
-/* 
-
-li {
-  list-style: none;
-} */
-
-/* ::-webkit-scrollbar {
-  width: 20px;
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
 }
 
-::-webkit-scrollbar-track {
-  color: red;
+::-webkit-scrollbar {
+  width: 8px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -29,7 +20,7 @@ li {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
-} */
+}
 
 a {
   text-decoration: none;

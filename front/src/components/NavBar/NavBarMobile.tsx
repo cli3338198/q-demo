@@ -8,12 +8,12 @@ export default function NavBarMobile({ matches }: { matches: boolean }) {
   const { setNavToggled } = useContext(myContext);
 
   return (
-    <NavBarContainer>
+    <NavBarContainer id="navbar">
       <IconButton
         sx={{
           position: "absolute",
-          left: "1.5em",
-          top: "1.5em",
+          left: "-10px",
+          top: "10px",
         }}
         onClick={() => setNavToggled(true)}
       >

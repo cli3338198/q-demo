@@ -8,12 +8,6 @@ export default function NavBar() {
   const matches = useMediaQuery(theme.breakpoints.down("md"));
 
   return (
-    <>
-      {matches ? (
-        <NavBarMobile matches={matches} />
-      ) : (
-        <NavBarDesktop matches={matches} />
-      )}
-    </>
+    <>{matches ? <NavBarMobile matches={matches} /> : <NavBarDesktop />}</>
   );
 }
