@@ -1,12 +1,5 @@
-import {
-  Box,
-  Grid,
-  List,
-  ListItemText,
-  Stack,
-  Typography,
-} from "@mui/material";
-import { EmailField, FooterTitle } from "../../styles/footer";
+import { Box, Grid, List, ListItemText, Typography } from "@mui/material";
+import { FooterTitle } from "../../styles/footer";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import InstagramIcon from "@mui/icons-material/Instagram";
@@ -84,7 +77,7 @@ export default function Footer() {
             </ListItemText>
             <ListItemText>
               <Typography lineHeight={2} variant="caption">
-                About Us
+                Contact
               </Typography>
             </ListItemText>
           </List>
@@ -105,7 +98,34 @@ export default function Footer() {
           </List>
         </Grid>
         <Grid item md={6} lg={4}>
-          <FooterTitle variant="body1">Newsletter</FooterTitle>
+          <FooterTitle variant="body1">Werk</FooterTitle>
+          <List>
+            <ListItemText>
+              <Typography lineHeight={2} variant="caption">
+                News
+              </Typography>
+            </ListItemText>
+            <ListItemText>
+              <Typography lineHeight={2} variant="caption">
+                Investor Relations
+              </Typography>
+            </ListItemText>
+            <ListItemText>
+              <Typography lineHeight={2} variant="caption">
+                Affiliate Program
+              </Typography>
+            </ListItemText>
+            <ListItemText>
+              <Typography lineHeight={2} variant="caption">
+                Partner with Werk
+              </Typography>
+            </ListItemText>
+            <ListItemText>
+              <Typography lineHeight={2} variant="caption">
+                Developer
+              </Typography>
+            </ListItemText>
+          </List>
         </Grid>
       </Grid>
     </Box>

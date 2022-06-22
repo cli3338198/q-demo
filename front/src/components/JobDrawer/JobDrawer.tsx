@@ -26,7 +26,6 @@ export default function JobDrawer() {
     <Drawer
       ref={jobDrawerRef}
       open={jobDrawerToggled}
-      anchor="right"
       hideBackdrop={false}
       disableScrollLock={true}
       sx={{

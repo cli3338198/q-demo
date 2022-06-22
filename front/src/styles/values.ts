@@ -8,6 +8,7 @@ export const ValueContainer = styled(Box)(({ theme }) => ({
   flexDirection: "column",
   justifyContent: "center",
   alignItems: "center",
+  marginTop: "40px",
   marginBottom: "30px",
   width: "100%",
   height: "100%",

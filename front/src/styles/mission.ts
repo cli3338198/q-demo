@@ -4,7 +4,7 @@ import { styled } from "@mui/material/styles";
 export const MissionContainer = styled(Box)(({ theme }) => ({
   display: "flex",
   justifyContent: "center",
-  height: "80vh",
+  height: "95vh",
   padding: "0px 0px",
   [theme.breakpoints.down("md")]: {
     flexDirection: "column",

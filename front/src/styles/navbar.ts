@@ -10,12 +10,11 @@ export const NavBarContainer = styled(Box)(() => ({
   display: "flex",
   justifyContent: "center",
   alignItem: "center",
-  padding: "2px 8px",
   zIndex: 1000,
 }));
 
 export const NavBarHeader = styled(Typography)(() => ({
-  padding: "4px",
+  // padding: "4px",
   flexGrow: 1,
   fontSize: "4em",
 }));
