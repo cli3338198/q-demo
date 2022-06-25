@@ -1,4 +1,11 @@
-import { ChangeEvent, FormEvent, useContext, useState } from "react";
+import {
+  ChangeEvent,
+  FormEvent,
+  useContext,
+  useEffect,
+  useRef,
+  useState,
+} from "react";
 import { Button, Divider, Grid } from "@mui/material";
 import { Box } from "@mui/system";
 import CloseIcon from "@mui/icons-material/Close";
@@ -41,7 +48,7 @@ export default function JobForm() {
     try {
       setIsInvalidLinkedin(false);
       setIsLoading(true);
-      const { status } = await axios.post(
+      await axios.post(
         `http://localhost:5050/job/${selectedJob?.id}`,
         formState
       );
@@ -55,15 +62,21 @@ export default function JobForm() {
     }
   }
 
+  // to get current form state
+  // set localstorage after form change
+  // alternative to callback in classes/setState
+
   function handleChange(e: ChangeEvent<HTMLInputElement>) {
     setIsInvalidLinkedin(false);
     setFormState((prevState) => ({
       ...prevState,
       [e.target.name]: e.target.value,
     }));
-
-    localStorage.setItem(selectedJob?.id!, JSON.stringify(formState));
   }
+
+  useEffect(() => {
+    localStorage.setItem(selectedJob?.id!, JSON.stringify(formState));
+  }, [selectedJob, formState]);
 
   return (
     <Box
