@@ -12,10 +12,12 @@ Simple company website for a fictional company/organization
 
 install Node
 
-clone repo
+https://nodejs.org/en/
+
+clone repo or download zip
 
 ```sh
-git clone https://cli3338198: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@github.com/cli3338198/q-demo.git
+git clone https://github.com/cli3338198/q-demo.git
 ```
 
 `cd` into directory
