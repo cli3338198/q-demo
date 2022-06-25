@@ -12,7 +12,7 @@ Simple company website for a fictional company/organization
 
 install Node
 
-https://nodejs.org/en/
+https://nodejs.org/en/download/
 
 clone repo or download zip
 
