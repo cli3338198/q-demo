@@ -8,7 +8,7 @@
     "tsc": "tsc",
     "install:back": "npm --prefix ./back/ install",
     "install:front": "npm --prefix ./front/ install",
-    "install": "npm run install:back && npm run install:front && npm run install",
+    "install": "npm run install:back && npm run install:front",
     "back": "npm --prefix ./back/ run start",
     "front": "npm --prefix ./front/ run start",
     "all": "npm-run-all --parallel front back",
