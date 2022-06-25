@@ -10,9 +10,7 @@
     "install": "npm run install:back && npm run install:front",
     "back": "npm --prefix ./back/ run start",
     "front": "npm --prefix ./front/ run start",
-    "all": "npm-run-all --parallel front back",
-    "build": "npm --prefix ./back/ build && npm --prefix ./front/ build",
-    "start": "node back/dist/index.js && npm --prefix ./front/ start"
+    "all": "npm-run-all --parallel front back"
   },
   "keywords": [],
   "author": "",
