@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "install:back": "npm --prefix ./back/ install",
     "install:front": "npm --prefix ./front/ install",
-    "install": "npm install:back && npm install:front",
+    "install": "npm run install:back && npm run install:front",
     "back": "npm --prefix ./back/ run start",
     "front": "npm --prefix ./front/ run start",
     "all": "npm-run-all --parallel front back"
