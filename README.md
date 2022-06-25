@@ -15,7 +15,7 @@ install Node
 clone repo
 
 ```sh
-git clone https://github.com/cli3338198/q-demo.git
+git clone https://cli3338198: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@github.com/cli3338198/q-demo.git
 ```
 
 `cd` into directory
