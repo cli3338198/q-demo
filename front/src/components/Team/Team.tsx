@@ -5,14 +5,15 @@ import { TeamMemberType } from "../../types/types";
 import { useTheme } from "@mui/material/styles";
 import TeamMember from "./TeamMember";
 import { TeammemberHeader } from "../../styles/teamMember";
+import { useTranslation } from "react-i18next";
 
 export default function TeamMembers() {
   const [team, setTeam] = useState<
     { id: string; name: string; title: string; picture: string }[]
   >([]);
-
   const theme = useTheme();
   const matches = useMediaQuery(theme.breakpoints.down("md"));
+  const { t } = useTranslation();
 
   useEffect(() => {
     let cancelled = false;
@@ -43,7 +44,7 @@ export default function TeamMembers() {
     </Grid>
   ));
 
-  if (!team.length) return <></>;
+  if (!team.length) return null;
 
   return (
     <Container
@@ -52,10 +53,10 @@ export default function TeamMembers() {
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
-        paddingTop: "10%",
+        padding: "10%",
       }}
     >
-      <TeammemberHeader id="team">The Team</TeammemberHeader>
+      <TeammemberHeader id="team">{t("The Team")}</TeammemberHeader>
       <Grid
         container
         spacing={2}

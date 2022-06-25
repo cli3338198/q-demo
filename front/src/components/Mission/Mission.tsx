@@ -1,5 +1,6 @@
 // import { Typography, useMediaQuery } from "@mui/material";
 // import { useTheme } from "@mui/material/styles";
+import { useTranslation } from "react-i18next";
 import {
   MissionContainer,
   MissionContent,
@@ -8,10 +9,12 @@ import {
 } from "../../styles/mission";
 
 export default function Mission() {
+  const { t } = useTranslation();
+
   return (
     <MissionContainer id={"mission"}>
       <MissionContent>
-        <MissionTitle variant="h2">Our Mission</MissionTitle>
+        <MissionTitle variant="h2">{t("Our Mission")}</MissionTitle>
         <MissionDescription variant="subtitle1">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero
           beatae aliquam, blanditiis, voluptatibus saepe qui assumenda

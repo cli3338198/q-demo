@@ -3,8 +3,11 @@ import { FooterTitle } from "../../styles/footer";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import InstagramIcon from "@mui/icons-material/Instagram";
+import { useTranslation } from "react-i18next";
 
 export default function Footer() {
+  const { t } = useTranslation();
+
   return (
     <Box
       sx={{
@@ -23,7 +26,7 @@ export default function Footer() {
     >
       <Grid container spacing={2} justifyContent="center">
         <Grid item md={6} lg={4}>
-          <FooterTitle variant="h5">About Us</FooterTitle>
+          <FooterTitle variant="h5">{t("About Us")}</FooterTitle>
           <Typography>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus
             blanditiis sunt voluptatibus numquam error ipsa quasi nulla tempora
@@ -53,46 +56,46 @@ export default function Footer() {
           </Box>
         </Grid>
         <Grid item md={6} lg={2}>
-          <FooterTitle variant="body1">Information</FooterTitle>
+          <FooterTitle variant="body1">{t("Information")}</FooterTitle>
           <List>
             <ListItemText>
               <Typography lineHeight={2} variant="caption">
-                About Us
+                {t("About Us")}
               </Typography>
             </ListItemText>
             <ListItemText>
               <Typography lineHeight={2} variant="caption">
-                Orders
+                {t("Orders")}
               </Typography>
             </ListItemText>
             <ListItemText>
               <Typography lineHeight={2} variant="caption">
-                Privacy &amp; Policy
+                {t("Privacy & Policy")}
               </Typography>
             </ListItemText>
             <ListItemText>
               <Typography lineHeight={2} variant="caption">
-                Terms &amp; Conditions
+                {t("Terms & Conditions")}
               </Typography>
             </ListItemText>
             <ListItemText>
               <Typography lineHeight={2} variant="caption">
-                Contact
+                {t("Contact")}
               </Typography>
             </ListItemText>
           </List>
         </Grid>
         <Grid item md={6} lg={2}>
-          <FooterTitle variant="body1">Account</FooterTitle>
+          <FooterTitle variant="body1">{t("Account")}</FooterTitle>
           <List>
             <ListItemText>
               <Typography lineHeight={2} variant="caption">
-                Login
+                {t("Login")}
               </Typography>
             </ListItemText>
             <ListItemText>
               <Typography lineHeight={2} variant="caption">
-                My Account
+                {t("My Account")}
               </Typography>
             </ListItemText>
           </List>
@@ -102,27 +105,27 @@ export default function Footer() {
           <List>
             <ListItemText>
               <Typography lineHeight={2} variant="caption">
-                News
+                {t("News")}
               </Typography>
             </ListItemText>
             <ListItemText>
               <Typography lineHeight={2} variant="caption">
-                Investor Relations
+                {t("Investor Relations")}
               </Typography>
             </ListItemText>
             <ListItemText>
               <Typography lineHeight={2} variant="caption">
-                Affiliate Program
+                {t("Affiliate Program")}
               </Typography>
             </ListItemText>
             <ListItemText>
               <Typography lineHeight={2} variant="caption">
-                Partner with Werk
+                {t("Partner with")} Werk
               </Typography>
             </ListItemText>
             <ListItemText>
               <Typography lineHeight={2} variant="caption">
-                Developer
+                {t("Developer")}
               </Typography>
             </ListItemText>
           </List>

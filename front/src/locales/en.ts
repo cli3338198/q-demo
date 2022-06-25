@@ -1,0 +1,52 @@
+export const en = {
+  About: "About",
+  Mission: "Mission",
+  Values: "Values",
+  Team: "Team",
+  Jobs: "Jobs",
+  "Who are we": "Who are we",
+  "Our Mission": "Our Mission",
+  "Our Values": "Our Values",
+  Innovation: "Innovation",
+  Growth: "Growth",
+  Compassion: "Compassion",
+  "Be Curious and Adventurous.": "Be Curious and Adventurous.",
+  "Embrace Opportunities To Learn and Improve":
+    "Embrace Opportunities To Learn and Improve",
+  "Observe, Listen, Understand and Assist.":
+    "Observe, Listen, Understand and Assist.",
+  "We question conventional wisdom and challenge the status quo. If there is a better way, we'll find it. We're excited by ingenuity and thrilled to try something new.":
+    "We question conventional wisdom and challenge the status quo. If there is a better way, we'll find it. We're excited by ingenuity and thrilled to try something new.",
+  "We invest in ourselves not just to grow as an organization but also as individuals. Through personal development and improvement we enrich our lives.":
+    "We invest in ourselves not just to grow as an organization but also as individuals. Through personal development and improvement we enrich our lives.",
+  "Everyone we work with experiences the same hopes and fears. Our compassion is what allows us to understand where we're needed and how we can help.":
+    "Everyone we work with experiences the same hopes and fears. Our compassion is what allows us to understand where we're needed and how we can help.",
+  "The Team": "The Team",
+  "Come Work With Us. Our staff is diverse and from all over the world, united by a shared passion for purpose-driven, meaningful work.":
+    "Come Work With Us. Our staff is diverse and from all over the world, united by a shared passion for purpose-driven, meaningful work.",
+  "Can you put it on my calendar? organic growth all hands on deck. Forcing function. Get all your ducks in a row pig in a python. Can you ballpark the cost per unit for me hop on the bandwagon so innovation is hot right now put in in a deck for our standup today weaponize the data but nail it down. Those options are already baked in with this model. Viral engagement. What are the expectations.":
+    "Can you put it on my calendar? organic growth all hands on deck. Forcing function. Get all your ducks in a row pig in a python. Can you ballpark the cost per unit for me hop on the bandwagon so innovation is hot right now put in in a deck for our standup today weaponize the data but nail it down. Those options are already baked in with this model. Viral engagement. What are the expectations.",
+  "Search Jobs": "Search Jobs",
+  "ABOUT US": "ABOUT US",
+  INFORMATION: "INFORMATION",
+  ACCOUNT: "ACCOUNT",
+  "About Us": "About Us",
+  Orders: "Orders",
+  "Privacy & Policy": "Privacy & Policy",
+  "Terms & Conditions": "Terms & Conditions",
+  Contact: "Contact",
+  Login: "Login",
+  "My Account": "My Account",
+  News: "News",
+  "Investor Relations": "Investor Relations",
+  "Affiliate Program": "Affiliate Program",
+  "Partner with": "Partner with",
+  Developer: "Developer",
+  "The Role": "The Role",
+  "Full Name": "Full Name",
+  REMOTE: "REMOTE",
+  Email: "Email",
+  Invalid: "Invalid",
+  "APPLY TO THIS JOB": "APPLY TO THIS JOB",
+  SUCCESS: "SUCCESS",
+};

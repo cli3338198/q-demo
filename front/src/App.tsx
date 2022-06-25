@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useContext, useEffect } from "react";
 import "./App.css";
 import { useTheme } from "@mui/material/styles";
 import { ThemeProvider } from "@emotion/react";
@@ -16,11 +16,36 @@ import JobDrawer from "./components/JobDrawer/JobDrawer";
 import Footer from "./components/Footer/Footer";
 import NavBarMobile from "./components/NavBar/NavBarMobile";
 import MenuIcon from "@mui/icons-material/Menu";
+import i18n from "i18next";
+import { initReactI18next } from "react-i18next";
+import { en } from "./locales/en";
+import { fr } from "./locales/fr";
+
+i18n.use(initReactI18next).init({
+  resources: {
+    en: {
+      translation: en,
+    },
+    fr: {
+      translation: fr,
+    },
+  },
+  lng: document.querySelector("html")?.lang,
+  fallbackLng: "en",
+  cache: ["cookie"],
+});
 
 function App() {
   const theme = useTheme();
   const matches = useMediaQuery(theme.breakpoints.down("md"));
   const { setNavToggled } = useContext(myContext);
+
+  // clear local storage when app closed
+  useEffect(() => {
+    return () => {
+      localStorage.clear();
+    };
+  }, []);
 
   return (
     <>
@@ -43,22 +68,15 @@ function App() {
       <Container
         maxWidth="xl"
         sx={{
-          paddingLeft: "5%",
+          paddingLeft: "10%",
         }}
       >
-        {/* Navbar */}
         <NavBar />
-        {/* About */}
         <About />
-        {/* Mission */}
         <Mission />
-        {/* Values */}
         <Values />
-        {/* Team Members */}
         <Team />
-        {/* Jobs */}
         <Jobs />
-        {/* Drawer */}
         <NavDrawer />
         <JobDrawer />
         <Footer />

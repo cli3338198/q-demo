@@ -1,7 +1,8 @@
-import { Grid } from "@mui/material";
+import { Grid, TextField } from "@mui/material";
 import { Container } from "@mui/system";
 import axios from "axios";
 import { useContext, useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 import { myContext } from "../../context/MyProvider";
 import {
   JobsContainer,
@@ -16,6 +17,8 @@ import JobsItem from "./JobsItem";
 
 export default function Jobs() {
   const [jobs, setJobs] = useState<JobsType[]>([]);
+  const { filter, setFilter } = useContext(myContext);
+  const { t } = useTranslation();
 
   useEffect(() => {
     let cancelled = false;
@@ -42,7 +45,7 @@ export default function Jobs() {
       flexDirection={"column"}
       alignItems="center"
     >
-      <JobsItem job={job} />
+      <JobsItem job={job} filter={filter} />
     </Grid>
   ));
 
@@ -50,26 +53,21 @@ export default function Jobs() {
     <JobsContainer id={"jobs"}>
       {/* left side */}
       <JobsContent>
-        <JobsHeader>Jobs</JobsHeader>
+        <JobsHeader>{t("Jobs")}</JobsHeader>
         <JobsDescription>
-          Come Work With Us. Our staff is diverse and from all over the world,
-          united by a shared passion for purpose-driven, meaningful work.
+          {t(
+            "Come Work With Us. Our staff is diverse and from all over the world, united by a shared passion for purpose-driven, meaningful work."
+          )}
         </JobsDescription>
         <JobsSubtitle>
-          Can you put it on my calendar? organic growth all hands on deck.
-          Forcing function. Get all your ducks in a row pig in a python. Can you
-          ballpark the cost per unit for me hop on the bandwagon so innovation
-          is hot right now put in in a deck for our standup today weaponize the
-          data but nail it down. Those options are already baked in with this
-          model. Viral engagement. What are the expectations.
+          {t(
+            "Can you put it on my calendar? organic growth all hands on deck. Forcing function. Get all your ducks in a row pig in a python. Can you ballpark the cost per unit for me hop on the bandwagon so innovation is hot right now put in in a deck for our standup today weaponize the data but nail it down. Those options are already baked in with this model. Viral engagement. What are the expectations."
+          )}
         </JobsSubtitle>
         <JobsSubtitle>
-          Can you put it on my calendar? organic growth all hands on deck.
-          Forcing function. Get all your ducks in a row pig in a python. Can you
-          ballpark the cost per unit for me hop on the bandwagon so innovation
-          is hot right now put in in a deck for our standup today weaponize the
-          data but nail it down. Those options are already baked in with this
-          model. Viral engagement. What are the expectations.
+          {t(
+            "Can you put it on my calendar? organic growth all hands on deck. Forcing function. Get all your ducks in a row pig in a python. Can you ballpark the cost per unit for me hop on the bandwagon so innovation is hot right now put in in a deck for our standup today weaponize the data but nail it down. Those options are already baked in with this model. Viral engagement. What are the expectations."
+          )}
         </JobsSubtitle>
 
         {/* jobs list */}
@@ -82,6 +80,17 @@ export default function Jobs() {
             padding: "1em",
           }}
         >
+          <TextField
+            placeholder={t("Search Jobs")}
+            variant="standard"
+            sx={{
+              paddingBottom: "2rem",
+              input: {
+                textAlign: "center",
+              },
+            }}
+            onChange={(e) => setFilter(e.target.value)}
+          />
           <Grid container spacing={4} justifyContent={"center"}>
             {renderJobs}
           </Grid>

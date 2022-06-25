@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import {
   AboutContainer,
   AboutContent,
@@ -7,11 +8,13 @@ import {
 } from "../../styles/about";
 
 export default function About() {
+  const { t } = useTranslation();
+
   return (
     <AboutContainer id={"about"}>
       <AboutImage src="/assets/hands.jpg" />
       <AboutContent>
-        <AboutTitle variant="h2">Who are we?</AboutTitle>
+        <AboutTitle variant="h2">{t("Who are we")}?</AboutTitle>
         <AboutDescription variant="subtitle1">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat odit
           necessitatibus voluptas commodi, a ut expedita architecto maiores

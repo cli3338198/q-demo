@@ -12,7 +12,6 @@ export const ValueContainer = styled(Box)(({ theme }) => ({
   marginBottom: "30px",
   width: "100%",
   height: "100%",
-  padding: "0px 0px",
   [theme.breakpoints.down("md")]: {
     marginTop: "40px",
     flexDirection: "column",
@@ -39,7 +38,6 @@ export const ValueContent = styled(Box)(({ theme }) => ({
   justifyContent: "space-around",
   alignItems: "center",
   maxWidth: "100%",
-  padding: "0 30px 0 30px",
   [theme.breakpoints.down("md")]: {
     flexDirection: "column",
     alignItems: "center",

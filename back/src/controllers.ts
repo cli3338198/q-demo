@@ -17,19 +17,20 @@ export function postJobHandler(
   req: Request<
     { id: string },
     {},
-    { name: string; email: string; url: string }
+    { fullname: string; email: string; linkedin: string }
   >,
   res: Response
 ) {
   const { id } = req.params;
-  const { url } = req.body;
-  // check if valid linkedin url
+  const { linkedin } = req.body;
+
+  // check if valid linkedin linkedin
   const regex = new RegExp(
     /^(http(s)?:\/\/)?([\w]+\.)?linkedin\.com\/(pub|in|profile).+/
   );
-  const isValidUrl = url.match(regex);
+  const isValidlinkedin = linkedin.match(regex);
 
-  if (isValidUrl) {
+  if (isValidlinkedin) {
     res.status(200).json(id);
   } else {
     res.status(400).json(id);

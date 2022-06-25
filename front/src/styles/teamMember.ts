@@ -1,7 +1,30 @@
 import { Box, styled } from "@mui/system";
 import { Typography } from "@mui/material";
 
+export const TeamContainer = styled(Box)(({ theme }) => ({
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "center",
+  alignItems: "center",
+  flexBasis: 1,
+  width: "100%",
+  height: "100%",
+  marginTop: "40px",
+  marginBottom: "30px",
+  [theme.breakpoints.down("md")]: {
+    marginTop: "40px",
+    display: "grid",
+    alignItems: "center",
+  },
+  [theme.breakpoints.down("sm")]: {
+    marginTop: "100px",
+    flexDirection: "column",
+    alignItems: "center",
+  },
+}));
+
 export const TeammemberHeader = styled(Typography)(({ theme }) => ({
+  textAlign: "center",
   marginTop: "20px",
   lineHeight: 1.5,
   fontSize: "72px",
@@ -41,28 +64,6 @@ export const TeammemberDescription = styled(Typography)(({ theme }) => ({
 }));
 
 //
-
-export const TeamContainer = styled(Box)(({ theme }) => ({
-  display: "flex",
-  flexDirection: "column",
-  justifyContent: "center",
-  alignItems: "center",
-  flexBasis: 1,
-  width: "100%",
-  height: "100%",
-  marginTop: "60px",
-  marginBottom: "60px",
-  [theme.breakpoints.down("md")]: {
-    display: "grid",
-    marginTop: "30px",
-    alignItems: "center",
-  },
-  [theme.breakpoints.down("sm")]: {
-    marginTop: "100px",
-    flexDirection: "column",
-    alignItems: "center",
-  },
-}));
 
 export const TeamContent = styled(Box)(({ theme }) => ({
   display: "grid",

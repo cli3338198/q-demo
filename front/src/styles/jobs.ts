@@ -6,8 +6,8 @@ export const JobsContainer = styled(Box)(({ theme }) => ({
   display: "flex",
   width: "100%",
   height: "100%",
-  marginTop: "120px",
-  marginBottom: "60px",
+  marginTop: "40px",
+  marginBottom: "200px",
   justifyContent: "space-between",
   [theme.breakpoints.down("md")]: {
     flexDirection: "column",

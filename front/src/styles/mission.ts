@@ -5,16 +5,18 @@ export const MissionContainer = styled(Box)(({ theme }) => ({
   display: "flex",
   justifyContent: "center",
   height: "95vh",
-  padding: "0px 0px",
+  marginTop: "40px",
+  marginBottom: "30px",
   [theme.breakpoints.down("md")]: {
+    marginTop: "40px",
     flexDirection: "column",
     alignItems: "center",
   },
   [theme.breakpoints.down("sm")]: {
     flexDirection: "column",
     alignItems: "center",
-    paddingBottom: "20px",
-    marginTop: "100px",
+
+    marginTop: "10px",
     height: "100vh",
   },
 }));
@@ -56,11 +58,14 @@ export const MissionDescription = styled(Typography)(({ theme }) => ({
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
-  textAlign: "center",
+  textAlign: "left",
   lineHeight: 1.25,
   letterSpacing: 1.25,
   marginBottom: "2em",
-  padding: "1em",
+  [theme.breakpoints.up("md")]: {
+    padding: "0 1em",
+  },
+
   [theme.breakpoints.down("sm")]: {
     fontSize: "15px",
     letterSpacing: 1.15,

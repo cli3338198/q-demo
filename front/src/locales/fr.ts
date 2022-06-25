@@ -1,0 +1,52 @@
+export const fr = {
+  About: "À propos",
+  Mission: "Mission",
+  Values: "Valeurs",
+  Team: "Équipe",
+  Jobs: "Emplois",
+  "Who are we": "Qui sommes-nous",
+  "Our Mission": "Notre mission",
+  "Our Values": "Nos valeurs",
+  Innovation: "Innovation",
+  Growth: "Croissance",
+  Compassion: "Compassion",
+  "Be Curious and Adventurous.": " Être curieux et aventureux.",
+  "Embrace Opportunities To Learn and Improve":
+    "Profitez des occasions d'apprendre et de vous améliorer",
+  "Observe, Listen, Understand and Assist.":
+    "Regardez, écoutez, comprenez et aidez.",
+  "We question conventional wisdom and challenge the status quo. If there is a better way, we'll find it. We're excited by ingenuity and thrilled to try something new.":
+    "Nous remettons en question la sagesse conventionnelle et défions le statu quo. S'il existe un meilleur moyen, nous le trouverons. Nous sommes enthousiasmés par l'ingéniosité et heureux d'essayer quelque chose de nouveau.",
+  "We invest in ourselves not just to grow as an organization but also as individuals. Through personal development and improvement we enrich our lives.":
+    "Nous investissons en nous-mêmes non seulement pour grandir en tant qu'organisation mais aussi en tant qu'individus. Grâce au développement et à l'amélioration personnelle, nous enrichissons nos vies.",
+  "Everyone we work with experiences the same hopes and fears. Our compassion is what allows us to understand where we're needed and how we can help.":
+    "Tous ceux avec qui nous travaillons vivent les mêmes espoirs et les mêmes craintes. Notre compassion est ce qui nous permet de comprendre où nous sommes nécessaires et comment nous pouvons aider.",
+  "The Team": " L'équipe",
+  "Come Work With Us. Our staff is diverse and from all over the world, united by a shared passion for purpose-driven, meaningful work.":
+    "Venez travailler avec nous. Nos employés sont diversifiés et viennent du monde entier, unis par une passion commune pour un travail utile et significatif.",
+  "Can you put it on my calendar? organic growth all hands on deck. Forcing function. Get all your ducks in a row pig in a python. Can you ballpark the cost per unit for me hop on the bandwagon so innovation is hot right now put in in a deck for our standup today weaponize the data but nail it down. Those options are already baked in with this model. Viral engagement. What are the expectations.":
+    "Pouvez-vous le mettre sur mon calendrier? croissance organique tous sur le pont. fonction de forçage. Obtenez tous vos canards dans une rangée de cochons sur un python. Pouvez-vous calculer le coût unitaire pour moi ? Sautez dans le train en marche pour que l'innovation soit à la mode en ce moment. Ces options sont déjà intégrées à ce modèle. Engagement viral. Quelles sont les attentes?",
+  "Search Jobs": "Recherche de travail",
+  "ABOUT US": "À PROPOS DE NOUS",
+  INFORMATION: "INFORMATIONS",
+  ACCOUNT: "COMPTE",
+  "About Us": "À propos de nous",
+  Orders: "Ordres",
+  "Privacy & Policy": "Politique de confidentialité",
+  "Terms & Conditions": "termes et conditions",
+  Contact: "Contact",
+  Login: "Connexion",
+  "My Account": "Mon compte",
+  News: "Nouvelles",
+  "Investor Relations": "Relations avec les investisseurs",
+  "Affiliate Program": "Programme d'affiliation",
+  "Partner with": "Partenaire avec",
+  Developer: "Développeur",
+  "The Role": "Le rôle",
+  "Full Name": "Nom et prénom",
+  REMOTE: "TÉLÉCOMMANDE",
+  Email: "Email",
+  Invalid: "Non valide",
+  "APPLY TO THIS JOB": "POSTULER A CET EMPLOI",
+  SUCCESS: "SUCCÈS",
+};
