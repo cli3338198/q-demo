@@ -10,7 +10,8 @@
     "install": "npm run install:back && npm run install:front",
     "back": "npm --prefix ./back/ run start",
     "front": "npm --prefix ./front/ run start",
-    "all": "npm-run-all --parallel front back"
+    "all": "npm-run-all --parallel front back",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm run install && npm run build --prefix ./client"
   },
   "keywords": [],
   "author": "",
