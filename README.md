@@ -8,6 +8,8 @@
 
 Simple company website for a fictional company/organization
 
+[Try it out](https://unequal-berry.surge.sh/)
+
 ## Setup
 
 install Node
