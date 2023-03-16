@@ -10,6 +10,11 @@ Simple company website for a fictional company/organization
 
 [Try it out](https://unequal-berry.surge.sh/)
 
+## Preview
+
+![DEMO](/front/public/01.gif)
+![DEMO](/front/public/02.gif)
+
 ## Setup
 
 install Node
@@ -47,7 +52,4 @@ npm run all
 - [x] Incomplete Form Changes saved to localstorage
 - [x] Forms Fields validated by server
 
-## Preview
 
-![DEMO](/front/public/01.gif)
-![DEMO](/front/public/02.gif)
